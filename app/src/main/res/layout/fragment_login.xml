@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".LoginFragment">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/white">
 
         <TextView
             android:id="@+id/textView2"
@@ -20,9 +20,10 @@
         <EditText
             android:id="@+id/editTextText3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:ems="10"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:background="@drawable/edit_text_background"/>
 
         <TextView
             android:id="@+id/textView3"
@@ -34,14 +35,57 @@
         <EditText
             android:id="@+id/editTextTextPassword2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_background"/>
 
         <Button
             android:id="@+id/submitLogn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:text="Login"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/line"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white"
+                android:text="Or Sign In With" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_google"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_twitter"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_apple"/>
+        </LinearLayout>
     </LinearLayout>
 </FrameLayout>

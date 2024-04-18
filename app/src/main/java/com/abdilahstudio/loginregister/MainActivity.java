@@ -33,21 +33,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void login(){
-        EditText username = findViewById(R.id.editTextText3);
-        EditText password = findViewById(R.id.editTextTextPassword2);
-
-        Intent intent = new Intent(this, HomeActivity.class);
-        intent.putExtra("username", username.getText());
-        intent.putExtra("password", password.getText());
-        startActivity(intent);
-    }
-
-    public void register(){
-        Fragment fragment = new RegisterFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.mainLayout, fragment).commit();
-    }
-
     public void  loadFragment(Fragment fragment){
         FragmentManager fm =getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
